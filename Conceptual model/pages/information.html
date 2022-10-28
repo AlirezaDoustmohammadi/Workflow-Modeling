@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>پروژه داروخانه</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap-rtl.min.css">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/main.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="main.html">پروژه داروخانه</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                
+                 <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="information.html"><i class="fa fa-user fa-fw"></i> اطلاعات سیستم</a>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> خروج</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    
+					<ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="main.html"><i class="fa fa-home fa-fw"></i> میزکار</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> داروخانه<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+
+                                <li>
+                                    <a href="#"><i class="fa fa-folder fa-fw"></i> عملیات<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="noskhe.html"> نسخه پیچی</a>
+                                        </li>
+                                        </li>
+                                    </ul>
+
+                                <li>
+                                    <a href="#"><i class="fa fa-folder fa-fw"></i> تعاریف<span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="insurance.html">لیست بیمه ها</a>
+                                        </li>
+                                        <li>
+                                            <a href="doctors.html">لیست پزشکان</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+
+                            <a href="#"><i class="fa fa-qrcode"></i> اطلاعات پایه انبار<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="add_drug.html">تعریف کالا</a>
+                                </li>
+                                <li>
+                                    <a href="drug_table.html">لیست کالاها</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-shopping-cart"></i> اطلاعات فروش <span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="shopping.html">لیست فروش </a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> امکانات سیستم<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="information.html">فرم اطلاعات سیستم</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+					
+					
+					
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <!-- /.row -->
+            <section class="content">
+
+
+                <h1 class="page-header">ویرایش اطلاعات</h1>
+                <div class="row">
+
+                    <div class="alert alert-warning alert-dismissable">
+                        <a class="panel-close close" data-dismiss="alert">×</a>
+                        <i class="fa fa-coffee"></i>
+                        <strong>تذکر:  </strong>لطفا تمامی مشخصات را تکمیل بفرمایید
+                    </div>
+
+                    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+                        <h3>اطلاعات داروخانه</h3>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">نام داروخانه:</label>
+                                <div class="col-lg-8">
+                                    <input class="form-control" value=" " type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">کد پروانه داروخانه:</label>
+                                <div class="col-lg-8">
+                                    <input class="form-control" value=" " type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">نام مالک داروخانه:</label>
+                                <div class="col-lg-8">
+                                    <input class="form-control" value=" " type="text">
+                                </div>
+                            </div>
+                            <h3>اطلاعات دکتر داروساز</h3>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">نام دکتر داروساز:</label>
+                                <div class="col-lg-8">
+                                    <input class="form-control" value=" " type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">کد نظام پزشکی:</label>
+                                <div class="col-lg-8">
+                                    <input class="form-control" value=" " type="text">
+                                </div>
+                            </div>
+
+                            <h3>اطلاعات سیستم</h3>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">نام کاربری:</label>
+                                <div class="col-md-8">
+                                    <input class="form-control" value="داروخانه ماندگار" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">رمز عبور:</label>
+                                <div class="col-md-8">
+                                    <input class="form-control" value="93101111" type="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">تکرار رمز عبور:</label>
+                                <div class="col-md-8">
+                                    <input class="form-control" value="93101111" type="password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">آدرس ایمیل:</label>
+                                <div class="col-lg-8">
+                                    <input class="form-control" value="drugstore@yahoo.com" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">منطقه زمانی</label>
+                                <div class="col-lg-8">
+                                    <div class="ui-select">
+                                        <select id="user_time_zone" class="form-control">
+                                            <option value="Iran">GMT-05:00  Iran</option>
+                                            <option value="Pacific Time (US & Canada)">GMT-08:00 Pacific Time </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label"></label>
+                                <div class="col-md-8">
+                                    <input class="btn btn-primary" value="اعمال تغییرات" type="button">
+                                    <span></span>
+                                    <input class="btn btn-default" value="لغو تغییرات" type="reset">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </div>
+        </section>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/main.js"></script>
+
+</body>
+
+</html>
